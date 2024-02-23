@@ -1,0 +1,28 @@
+GET http://localhost:8080
+
+### read all
+GET http://localhost:8080/employees
+
+### read one
+GET http://localhost:8080/employees/1
+
+### create
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Jim",
+  "position" : "pos2",
+  "salary": 500
+}
+
+### update
+PATCH http://localhost:8080/employees/1
+Content-Type: application/json
+
+{
+  "salary": 234
+}
+
+### delete
+DELETE http://localhost:8080/employees/3
